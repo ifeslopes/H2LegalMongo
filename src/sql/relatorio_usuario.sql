@@ -1,0 +1,10 @@
+select c.CODIGO_USUARIO
+     ,c.NOME
+     , c.EMAIL 
+     , c.IDADE_USUARIO as IDADE
+     , c.ALTURA_USUARIO as ALTURA
+     , c.PESO_USUARIO as PESO
+     , p.DESCRICAO_PERFIL as PERFIL
+     , p.PORCENTAGEM_PERFIL as PERCENTUAL
+  from usuario c JOIN PERFILS p ON(c.CODIGO_PERFIL =p.CODIGO_PERFIL)
+ order by c.nome
