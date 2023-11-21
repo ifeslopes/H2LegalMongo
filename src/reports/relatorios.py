@@ -23,7 +23,7 @@ class RelatorioMenu:
     def get_relatorio_perfil_usuario(self):
         # Cria uma nova conexão com o banco que permite alteração
         #self.relatorio.get_relatorio_perfils_usado()
-        input("AAAUIIOIIIII")
+       
         self.relatorio.get_relatorio_fornecedor()
    
         input("Pressione Enter para Sair do Relatório de  quantidade de Perfils por usuarios")

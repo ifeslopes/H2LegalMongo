@@ -115,7 +115,7 @@ class Controller_Perfil:
         oracle = OracleQueries(can_write=True)
         oracle.connect()
         self.mongo.connect()
-        self.relatorio.get_relatorio_perfil()
+        self.relatorio.get_relator1io_perfil()
 
         # Solicita ao usuário o código do perfil a ser alterado
         codigo_perfil = int(input("Código do perfil que irá excluir: "))        

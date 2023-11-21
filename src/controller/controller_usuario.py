@@ -25,7 +25,7 @@ class Controller_Usuario:
         # Solicita o peso
         peso_usuario = float(input("Peso (Novo): "))
         # Listar os usuarios
-        self.relatorio.get_relatorio_perfil()
+        self.relatorio.get_relator1io_perfil()
 
         # Solicita o código do usuario
         codigo_perfil = int(input("Código do pefil : "))
@@ -155,6 +155,7 @@ class Controller_Usuario:
                     # Exibe os atributos do perfil excluído
                     print("perfil Removido com Sucesso!")
                     print(df_usuario.to_string()) 
+                    
                     self.mongo.close()
                 else:
                     print(

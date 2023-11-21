@@ -155,7 +155,7 @@ class Controller_Agenda:
             if nome == "s":
                 # Revome o perfil da tabela
                     
-                self.mongo.db["agenda"].delete_one({"agenda_usuario": id})
+                self.mongo.db["agenda"].delete_one({"codigo_agenda": id})
                    
                     # Exibe os atributos do perfil excluído
                 print("perfil Removido com Sucesso!")
